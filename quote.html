@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Get a Quote — Wayne Glass & Aluminium</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Wayne Glass & Aluminium Home">
+        <img class="brand-logo" src="/mnt/data/file_0000000060a471f5934aabf71f1d5b26" alt="Wayne Glass & Aluminium logo">
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a class="btn-cta" href="quote.html">Get a Quote</a></li>
+        </ul>
+      </nav>
+      <button id="mobileMenuBtn2" class="mobile-menu-btn" aria-label="Open menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section quote-hero">
+      <div class="container">
+        <h1>Build your product — instant estimate</h1>
+        <p class="lede">Select product, choose style, pick sizes & materials, then calculate an estimate. Save, email or request a callback.</p>
+      </div>
+    </section>
+
+    <section class="section quote-wizard">
+      <div class="container">
+        <div id="wizardRoot" class="wizard-root">
+          <div class="wiz-steps" id="wizSteps"></div>
+          <div class="wiz-panels" id="wizPanels"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Wayne Glass & Aluminium</strong><p>Precision glazing & aluminium systems</p></div>
+      <div><nav><a href="index.html">Home</a><br><a href="products.html">Products</a></nav></div>
+      <div><p>Phone: <a href="tel:+27748534893">+27 74 853 4893</a></p></div>
+    </div>
+    <div class="container copyright">
+      <small>&copy; <span id="year2"></span> Wayne Glass & Aluminium</small>
+    </div>
+  </footer>
+
+  <!-- Optional EmailJS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!-- Catalog (data) and wizard JS -->
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/quote-wizard.js"></script>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
